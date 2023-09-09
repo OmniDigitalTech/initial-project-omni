@@ -6,6 +6,9 @@
 
     <title>Laravel</title>
 
+    <link rel="icon" href="{{ url('css/favicon.jpg') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url('css/style.css') }}">
+
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=figtree:400,600&display=swap" rel="stylesheet" />
