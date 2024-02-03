@@ -1,7 +1,6 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use \Modules\Management\Http\Controllers\ManagementController as management;
 use Modules\Website\Http\Controllers\WebsiteController as website;
 
 /*
@@ -15,10 +14,6 @@ use Modules\Website\Http\Controllers\WebsiteController as website;
 |
 */
 
-Route::prefix('/')->group(function() {
+Route::group(['prefix' => '/', 'middleware' => 'user'], function() {
     Route::get('/', [website::class, 'index'])->name('homepage');
 });
-
-//Route::group(['prefix' => 'admin', 'as' => 'admin.', 'middleware' => ['auth']], function(){
-//    Route::get('/dashboard', management::class)->name('dashboard');
-//});

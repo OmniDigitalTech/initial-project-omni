@@ -11,6 +11,8 @@
 |
 */
 
-Route::prefix('management')->group(function() {
+use Illuminate\Support\Facades\Route;
+
+Route::group(['prefix' => 'management', 'middleware' => 'admin'], function() {
     Route::get('/dashboard', 'ManagementController@index')->name('dashboard');
 });

@@ -11,6 +11,8 @@
 |
 */
 
-Route::prefix('website')->group(function() {
+use Illuminate\Support\Facades\Route;
+
+Route::group(['prefix' => 'website', 'middleware' => 'user'], function() {
     Route::get('/', 'WebsiteController@index');
 });

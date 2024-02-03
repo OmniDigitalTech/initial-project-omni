@@ -26,6 +26,8 @@
                     class="col-12 col-sm-8 offset-sm-2 col-md-6 offset-md-3 col-lg-6 offset-lg-3 col-xl-4 offset-xl-4">
                     <div class="login-brand">
                         <h1 class="text-danger">OMNI<span class="text-primary">DITECH</span></h1>
+                        <hr>
+                        <h4>MANAGEMENT</h4>
                     </div>
 
                     @yield('content')

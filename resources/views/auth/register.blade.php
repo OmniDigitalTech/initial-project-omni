@@ -11,7 +11,7 @@
                 @csrf
                 <div class="form-group">
                     <label for="name">Name</label>
-                    <input id="name" type="name" class="form-control @error('name') is-invalid @enderror"
+                    <input id="name" type="text" class="form-control @error('name') is-invalid @enderror"
                            name="name">
                     @error('name')
                     <div class="invalid-feedback">
@@ -58,6 +58,6 @@
         </div>
     </div>
     <div class="mt-5 text-muted text-center">
-        Already have a account? <a href="{{ route('register') }}">Sign In Now</a>
+        Already have a account? <a href="{{ route('login') }}">Sign In Now</a>
     </div>
 @endsection
